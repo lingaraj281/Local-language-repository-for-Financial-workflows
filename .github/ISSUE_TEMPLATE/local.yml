@@ -1,14 +1,14 @@
-name: Bug Report
-description: File a bug report
-title: "[Bug]: "
+name: Local Language Repo Survey
+description: Here is the simple financial survey 
+title: "[Local UPI]: "
 labels: ["bug", "triage"]
 assignees:
-  - octocat
+  - lingaraj,Adarsh
 body:
   - type: markdown
     attributes:
       value: |
-        Thanks for taking the time to fill out this bug report!
+        Thanks for taking the time to fill out this Survey Form!
   - type: input
     id: contact
     attributes:
