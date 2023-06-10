@@ -3,9 +3,12 @@ description: It is a financial survey on UPI Apps.
 title: "[Survey on Financial Challenges]: "
 labels: ["survey", "UPI"]
 assignees:
-  - octocat
+  - lingaraj
 body:
   - type: markdown
     attributes:
       value: |
         Thanks for taking the time to fill out this bug report!
+  -type: input
+    attributes:
+      label: Please input here
