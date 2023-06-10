@@ -1,7 +1,5 @@
 name: Local Language Repo Survey
 description: Here is the simple financial survey 
-title: "[Local UPI]: "
-labels: ["bug", "triage"]
 assignees:
   - lingaraj,Adarsh
 body:
