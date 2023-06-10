@@ -22,6 +22,6 @@ body:
       label: Choose any option from here
       description: Here is the example of checkbox 
       options:
-        label: Option1
-        label: Option2
-        required: true
+        - label: Option1
+        - label: Option2
+          required: true
