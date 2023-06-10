@@ -1,14 +1,19 @@
-name: Local Language Repository Survey
-description: It is a financial survey on UPI Apps.
-title: "[Survey on Financial Challenges]: "
-labels: ["survey", "UPI"]
+name: Bug Report
+description: File a bug report
+title: "[Bug]: "
+labels: ["bug", "triage"]
 assignees:
-  - lingaraj
+  - octocat
 body:
   - type: markdown
     attributes:
       value: |
         Thanks for taking the time to fill out this bug report!
-  -type: input
+  - type: input
+    id: contact
     attributes:
-      label: Please input here
+      label: Contact Details
+      description: How can we get in touch with you if we need more info?
+      placeholder: ex. email@example.com
+    validations:
+      required: false
