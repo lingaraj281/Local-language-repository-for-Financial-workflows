@@ -1,7 +1,8 @@
 name: Local Language Repo Survey
 description: Here is the simple financial survey 
+labels: ABCDE
 assignees:
-  - lingaraj,Adarsh
+  - lingaraj,Adarsh, Shruti
 body:
   - type: markdown
     attributes:
@@ -14,4 +15,13 @@ body:
       description: How can we get in touch with you if we need more info?
       placeholder: ex. email@example.com
     validations:
-      required: false
+      required: true
+  - type : checkbox
+    id: Options_13
+    attributes:
+      label: Choose any option from here
+      description: Here is the example of checkbox 
+      options:
+        label: Option1
+        label: Option2
+        required: true
