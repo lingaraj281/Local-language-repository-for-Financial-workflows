@@ -1,7 +1,7 @@
 name: Local Language Repository Survey
 description: It is a financial survey on UPI Apps.
-title: "[Bug]: "
-labels: ["bug", "triage"]
+title: "[Survey on Financial Challenges]: "
+labels: ["survey", "UPI"]
 assignees:
   - octocat
 body:
