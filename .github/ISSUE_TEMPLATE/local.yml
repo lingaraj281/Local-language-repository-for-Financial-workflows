@@ -1,18 +1,18 @@
 name: Sample Form
 description: This is a sample form
-title: "[Sample]: "
-labels: ["bug", "triage"]
-assignees:
-  - Lingaraj
+title: "[FORM] <Sample>"
 body:
-  - type: markdown
-    attributes:      
-    value: |
-        This is a sample form
 - type: checkboxes
   attributes:
-    label: Is there an existing issue for this?
-    description: Please search to see if an issue already exists for the bug you encountered.
+    label: XYZABCD
+    description: Please give the answer.
     options:
-    - label: I have searched the existing issues
+    - label: Option 1
+    - label: Option 2
       required: true
+- type: textarea
+  attributes:
+    label: Current Behavior
+    description: A concise description of what you're experiencing.
+  validations:
+    required: false
