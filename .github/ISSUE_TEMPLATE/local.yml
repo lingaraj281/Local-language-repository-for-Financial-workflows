@@ -6,7 +6,8 @@ assignees:
   - Lingaraj
 body:
   - type: markdown
-    attributes:      value: |
+    attributes:      
+    value: |
         This is a sample form
 - type: checkboxes
   attributes:
