@@ -17,13 +17,12 @@ body:
       placeholder: ex. Lingaraj/Adarsh/Shruti
     validations:
       required: True
-  - type: textarea
-    id: what-happened
+  - type: input
+    id: location
     attributes:
-      label: What happened?
-      description: Also tell us, what did you expect to happen?
-      placeholder: Tell us what you see!
-      value: "A bug happened!"
+      label: Location
+      description: Where the surveyor taking the survey?
+      placeholder: eg. Near Main Gate IIT Madras
     validations:
       required: true
   - type: dropdown
