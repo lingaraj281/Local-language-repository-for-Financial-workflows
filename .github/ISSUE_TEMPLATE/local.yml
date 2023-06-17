@@ -1,15 +1,15 @@
-name: Sample Form
+name: Survey Form of Local Repository app 
 description: This is a sample form
 title: "[FORM] <Sample>"
 body:
-- type: checkboxes
+- type: input
+  id: name
   attributes:
-    label: XYZABCD
-    description: Please give the answer.
-    options:
-    - label: Option 1
-    - label: Option 2
-      required: true
+    label: Name
+    description: Name / Code of Surveyor
+    placeholder: Enter your name
+   validations:
+    required: True   
 - type: textarea
   attributes:
     label: Current Behavior
