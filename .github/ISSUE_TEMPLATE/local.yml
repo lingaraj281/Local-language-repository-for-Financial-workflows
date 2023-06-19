@@ -95,7 +95,7 @@ body:
       description: Enter the participant home state
       placeholder: e.g. Odisha
   - type: dropdown
-    id: family size
+    id: family_size
     attributes:
       label: Remote family size
       description: Enter the participant remote family size
