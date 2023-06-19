@@ -6,9 +6,9 @@ assignees:
   - Lingaraj, Shruti, Adarsh
 body:
   - type: markdown
-    id: 
     attributes:
-      value: "1. Administrative"
+      value: |
+        Administrative
   - type: input
     id: name
     attributes:
@@ -40,7 +40,7 @@ body:
     validations:
           required: true
   - type: markdown
-    id: demography
     attrtibutes:
-      value: "2. Demography / General"
+      value: |
+        2. Demography / General
   
