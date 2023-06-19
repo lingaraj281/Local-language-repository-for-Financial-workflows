@@ -1,4 +1,4 @@
-name: # Survey for Local Language Repository
+name: Survey for Local Language Repository
 description: Survey
 title: "[Survey Form]: "
 labels: ["bug", "triage"]
@@ -88,3 +88,33 @@ body:
         - "No"
     validations:
       required: True
+  - type: input
+    id: address
+    attributes:
+      label: Which State?
+      description: Enter the participant home state
+      placeholder: e.g. Odisha
+  - type: dropdown
+    id: family size
+    attributes:
+      label: Remote family size
+      description: Enter the participant remote family size
+      options:
+        - 1-2
+        - 2-3
+        - 3-4
+  - type: input
+    id: education
+    attributes:
+      label: Number of years of schooling
+      description: Enter the participant number of years of schooling
+      placeholder: e.g. 5th / 8th
+  - type: input
+    id: mobile
+    attributes:
+      label: Mobile Number
+      description: Enter the participant mobile number
+      placeholder: e.g. 99379XXXX
+
+
+
