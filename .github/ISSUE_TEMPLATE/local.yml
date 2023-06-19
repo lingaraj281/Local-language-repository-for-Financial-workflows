@@ -50,5 +50,18 @@ body:
       description: Name of the person
     validations:
       required: True
+  - type: input
+    id: age
+    attributes:
+      label: Age
+      description: Enter the people age
+      placeholder: e.g. 30
+  - type: dropdown
+    id: gender
+    attributes:
+      label: Age
+      options:
+        - Male
+        - Female
 
     
