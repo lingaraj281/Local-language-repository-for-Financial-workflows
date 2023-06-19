@@ -8,7 +8,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        This survey contains 6 sections
+        ## 1. Administrative
   - type: input
     id: name
     attributes:
@@ -42,5 +42,5 @@ body:
   - type: markdown
     attributes:
       value: |
-        # 2. Demograohy / General
+        ## 2. Demography / General
   
