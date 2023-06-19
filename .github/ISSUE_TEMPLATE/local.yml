@@ -114,4 +114,12 @@ body:
     attributes:
       value: |
         ## Digital Literacy
+  - type: input
+    id: mobile44
+    attributes:
+      label: Mobile Number
+      label: Ok
+      description: Enter the participant mobile number
+      placeholder: e.g. 99379XXXX
+
 
