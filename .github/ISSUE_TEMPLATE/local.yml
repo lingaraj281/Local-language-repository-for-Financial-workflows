@@ -82,6 +82,6 @@ body:
       label: Mobile Data/Internet Access
       description: Are they have internet access
       options:
-        - Yes
-        - No
+        - "Yes"
+        - "No"
 
