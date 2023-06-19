@@ -25,16 +25,10 @@ body:
       placeholder: eg. Near Main Gate IIT Madras
     validations:
       required: true
-  - type: dropdown
-    id: browsers
+  - type: input
+    id: time
     attributes:
-      label: What browsers are you seeing the problem on?
-      multiple: true
-      options:
-        - Firefox
-        - Chrome
-        - Safari
-        - Microsoft Edge
+      label: Start Time
   - type: textarea
     id: logs
     attributes:
@@ -49,3 +43,4 @@ body:
       options:
         - label: I agree to follow this project's Code of Conduct
           required: true
+  
