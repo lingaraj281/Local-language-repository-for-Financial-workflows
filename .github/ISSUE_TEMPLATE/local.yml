@@ -70,5 +70,18 @@ body:
         - Other
     validations:
       required: True
+  - type: input
+    id: mobile
+    attributes:
+      label: Phone make / model
+      description: Participant is using iOS/Android or (Smartphone / basic keypad phone)
+      placeholder: e.g. Smartphone
+  - type: dropdown
+    id: mobile1
+    attributes:
+      label: Mobile Data/Internet Access
+      description: Are they have internet access
+      options:
+        - Yes
+        - No
 
-    
