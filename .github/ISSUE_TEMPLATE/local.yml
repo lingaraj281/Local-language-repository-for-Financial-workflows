@@ -31,6 +31,8 @@ body:
       label: Start Time
       description: When the survey starts?
       placeholder: e.g. 10.00 AM
+    validations:
+      required: True
   - type: input
     id: session_count
     attributes:
