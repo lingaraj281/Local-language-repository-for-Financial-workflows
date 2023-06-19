@@ -56,6 +56,8 @@ body:
       label: Age
       description: Enter the people age
       placeholder: e.g. 30
+    validations:
+      required: True
   - type: dropdown
     id: gender
     attributes:
@@ -63,5 +65,8 @@ body:
       options:
         - Male
         - Female
+        - Other
+    validations:
+      required: True
 
     
