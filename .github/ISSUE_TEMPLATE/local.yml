@@ -109,12 +109,9 @@ body:
       label: Number of years of schooling
       description: Enter the participant number of years of schooling
       placeholder: e.g. 5th / 8th
-  - type: input
-    id: mobile3
+  - type: markdown
+    id: subsection
     attributes:
-      label: Mobile Number
-      description: Enter the participant mobile number
-      placeholder: e.g. 99379XXXX
-
-
+      value: |
+        ## Digital Literacy
 
