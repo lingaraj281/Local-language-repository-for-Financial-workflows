@@ -76,6 +76,8 @@ body:
       label: Phone make / model
       description: Participant is using iOS/Android or (Smartphone / basic keypad phone)
       placeholder: e.g. Smartphone
+    validations:
+      required: True
   - type: dropdown
     id: mobile1
     attributes:
@@ -84,4 +86,5 @@ body:
       options:
         - "Yes"
         - "No"
-
+    validations:
+      required: True
