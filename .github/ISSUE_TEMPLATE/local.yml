@@ -1,7 +1,6 @@
 name: Survey for Local Language Repository
 description: Survey
 title: "[Survey Form]: "
-labels: ["bug", "triage"]
 assignees:
   - Lingaraj, Shruti, Adarsh
 body:
@@ -94,6 +93,8 @@ body:
       label: Which State?
       description: Enter the participant home state
       placeholder: e.g. Odisha
+    validations:
+      required: True
   - type: dropdown
     id: family_size
     attributes:
@@ -103,12 +104,16 @@ body:
         - 1-2
         - 2-3
         - 3-4
+    validations:
+      required: True
   - type: input
     id: education
     attributes:
       label: Number of years of schooling
       description: Enter the participant number of years of schooling
       placeholder: e.g. 5th / 8th
+    validations:
+      required: True
   - type: markdown
     id: subsection
     attributes:
