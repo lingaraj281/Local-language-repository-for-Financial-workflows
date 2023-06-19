@@ -29,18 +29,14 @@ body:
     id: time
     attributes:
       label: Start Time
-  - type: textarea
-    id: logs
+      description: When the survey starts?
+      placeholder: e.g. 10.00 AM
+  - type: input
+    id: session_count
     attributes:
-      label: Relevant log output
-      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
-      render: shell
-  - type: checkboxes
-    id: terms
-    attributes:
-      label: Code of Conduct
-      description: By submitting this issue, you agree to follow our [Code of Conduct](https://example.com)
-      options:
-        - label: I agree to follow this project's Code of Conduct
+      label: Session Count / Prior meeting notes
+      description: Number of sessions per person
+      placeholder: e.g - 1st / 2nd
+    validations:
           required: true
   
