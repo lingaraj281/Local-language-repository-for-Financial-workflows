@@ -1,0 +1,122 @@
+name: Survey for Local Language Repository
+description: Survey
+title: "[Survey Form]: "
+assignees:
+  - Lingaraj, Shruti, Adarsh
+body:
+  - type: markdown
+    attributes:
+      value: |
+        # 1. Administrative
+  - type: input
+    id: name
+    attributes:
+      label: Name/ Code of surveyor
+      description: Enter the name
+      placeholder: ex. Lingaraj/Adarsh/Shruti
+    validations:
+      required: True
+  - type: input
+    id: location
+    attributes:
+      label: Location
+      description: Where the surveyor taking the survey?
+      placeholder: eg. Near Main Gate IIT Madras
+    validations:
+      required: true
+  - type: input
+    id: time
+    attributes:
+      label: Start Time
+      description: When the survey starts?
+      placeholder: e.g. 10.00 AM
+    validations:
+      required: True
+  - type: input
+    id: session_count
+    attributes:
+      label: Session Count / Prior meeting notes
+      description: Number of sessions per person
+      placeholder: e.g - 1st / 2nd
+    validations:
+          required: true
+  - type: markdown
+    attributes:
+      value: |
+        # 2. Demography / General
+  - type: input
+    id: name1
+    attributes: 
+      label: नाम
+      description: Name of the person
+    validations:
+      required: True
+  - type: input
+    id: age
+    attributes:
+      label: उम्र
+      description: Enter the people age
+      placeholder: e.g. 30
+    validations:
+      required: True
+  - type: dropdown
+    id: gender
+    attributes:
+      label: 
+      options:
+        - Male
+        - Female
+        - Other
+    validations:
+      required: True
+  - type: input
+    id: mobile
+    attributes:
+      label: आप किस तरह का फोन इस्तेमाल कर रहे हैं
+      description: Participant is using iOS/Android or (Smartphone / basic keypad phone)
+      placeholder: e.g. Smartphone
+    validations:
+      required: True
+  - type: dropdown
+    id: mobile1
+    attributes:
+      label: क्या आपके पास इंटरनेट की सुविधा है
+      description: Are they have internet access
+      options:
+        - "Yes"
+        - "No"
+    validations:
+      required: True
+  - type: input
+    id: address
+    attributes:
+      label: आप किस राज्य से हैं
+      description: Enter the participant home state
+      placeholder: e.g. Odisha
+    validations:
+      required: True
+  - type: dropdown
+    id: family_size
+    attributes:
+      label: आपके दूरस्थ परिवार का आकार क्या है
+      description: Enter the participant remote family size
+      options:
+        - 1-2
+        - 2-3
+        - 3-4
+    validations:
+      required: True
+  - type: input
+    id: education
+    attributes:
+      label: स्कूली शिक्षा के वर्षों की संख्या
+      description: Enter the participant number of years of schooling
+      placeholder: e.g. 5th / 8th
+    validations:
+      required: True
+  - type: markdown
+    id: subsection
+    attributes:
+      value: |
+        ## Digital Literacy
+  
