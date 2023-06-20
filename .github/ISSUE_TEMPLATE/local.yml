@@ -133,8 +133,7 @@ body:
     id: literacy
     attributes:
       label: Digital Literacy
-      description: 1. What Language do you primarily communicate in ?
-      asdsadsad
+      description: 1. What Language do you primarily communicate in ? 2. Do you experience any difficulties in receiving messages? 3. Do you receive calls from banks?Do you receive calls from banks? 
       options:
         - 1
         - 2
