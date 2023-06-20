@@ -133,7 +133,7 @@ body:
     id: literacy
     attributes:
       label: Digital Literacy
-      description: 1. What Language do you primarily communicate in ? 2. Do you experience any difficulties in receiving messages? 3. Do you receive calls from banks?Do you receive calls from banks? 
+      description: 1. What Language do you primarily communicate in ? 2. Do you experience any difficulties in receiving messages? 3. Do you receive calls from banks?Do you receive calls from banks? 4. Do you receive messages from banks, such as OTPs (One-Time Passwords)? 5. Are you able to read and access all the messages on your phone? 6. In which language do you receive messages?  7. Can you understand and read messages sent in the English language? 8. Are you aware of the importance of not sharing OTPs with anyone? 
       options:
         - 1
         - 2
