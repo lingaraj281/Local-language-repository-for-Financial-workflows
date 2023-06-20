@@ -252,7 +252,7 @@ body:
       label: 2a. Loan Type					
       placeholder: Write here
     validations:
-      required: true
+      # required: true
 
   - type: input
     id: prompt6e
@@ -260,12 +260,130 @@ body:
       label: 2b. Amount			 				
       placeholder: Enter the amount in INR
     validations:
-      required: true
+      # required: true
 
   - type: input
     id: prompt6f
     attributes:
       label: 2c. Bank			 				
       placeholder: Write here
+    validations:
+      # required: true
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this bug report!
+  - type: markdown
+    attributes:
+      value: | 
+         # Banking relationship + Products / Channels.
+    validations: 
+      required: true
+  - type: input
+    id: Bank
+    attributes:
+      label: Bank Account
+      description: Number of bank Saving accounts /Post office accounts.
+      placeholder: ex. Number
+    validations:
+      required: true
+  - type: input
+    id: Bank-detail
+    attributes:
+      label: Name of Bank
+      description: Name of Banks/branch.
+      placeholder: ex. SBI
+    validations:
+      required: true
+  - type: markdown
+    attributes:
+      value: | 
+         ## Banking products/services used (multi-choice – includes open list) - Personal usage/awareness?
+    validations: 
+      required: true
+  - type: dropdown
+    id: Check-book
+    attributes:
+      label: Cheque book
+      description: Do you have check book?
+      multiple: true
+      options:
+        - "Yes"
+        - "No"
+        - Prefer not to say
+        - I do not say
+    validations:
+      required: true
+  - type: dropdown
+    id: ATM-Debit
+    attributes:
+      label: ATM/Debit card
+      description: Do you have ATM/Debit card?
+      multiple: true
+      options:
+        - "Yes"
+        - "No"
+        - Prefer not to say
+        - I do not say
+    validations:
+      required: true
+  - type: dropdown
+    id: Credit-Card
+    attributes:
+      label: Credit Card
+      description: Do you have Credit Card?
+      multiple: true
+      options:
+        - "Yes"
+        - "No"
+        - Prefer not to say
+        - I do not say
+    validations:
+      required: true
+  - type: dropdown
+    id: Loans
+    attributes:
+      label: Loans
+      description: Have you taken any loans like Gold, Kisan, etc
+      multiple: true
+      options:
+        - "Yes"
+        - "No"
+        - Prefer not to say
+        - I do not say
+    validations:
+      required: true
+  - type: input
+    id: branch
+    attributes:
+      label: Products via branch
+      description: Name
+    validations:
+      required: true
+  - type: input
+    id: Business
+    attributes:
+      label: Products via Business correspondent / Bank Mitra, Post office 
+      description: Name
+    validations:
+      required: true
+  - type: dropdown
+    id: Internet-Banking
+    attributes:
+      label: Online / Mobile banking.
+      description: Are you using Internet banking
+      multiple: true
+      options:
+        - "Yes"
+        - "No"
+        - Prefer not to say
+        - I do not say
+    validations:
+      required: true
+  - type: textarea
+    id: Others
+    attributes:
+      label: Others 
+      description: Name
     validations:
       required: true
