@@ -69,6 +69,17 @@ body:
         - Other
     validations:
       required: True
+  - type: checkboxes
+    id: languages
+    attributes:
+      label: Languages Known
+      options:
+        - English
+        - Hindi
+        - Odia
+        - Tamil
+        - Telugu
+        - Bengali
   - type: input
     id: mobile
     attributes:
