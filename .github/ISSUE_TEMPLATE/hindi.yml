@@ -60,15 +60,17 @@ body:
     validations:
       required: True
   - type: dropdown
-    id: gender
+    id: languages
     attributes:
-      label: Gender
+      label: Languages Known
+      description: What are the languages know by them
       options:
-        - Male
-        - Female
-        - Other
-    validations:
-      required: True
+        - English
+        - Hindi
+        - Tamil
+        - Odia
+        - Telugu
+        - Bengali
   - type: input
     id: mobile
     attributes:
@@ -114,9 +116,14 @@ body:
       placeholder: e.g. 5th / 8th
     validations:
       required: True
-  - type: markdown
-    id: subsection
+  - type: dropdown
+    id: literacy
     attributes:
-      value: |
-        ## Digital Literacy
-  
+      label: Digital Literacy
+      description: 1. आप प्राथमिक रूप से किस भाषा में संवाद करते हैं? 2. क्या आप संदेश प्राप्त करने में किसी कठिनाई का अनुभव करते हैं? 3. क्या आपको बैंकों से कॉल आती हैं? 4. क्या आपको बैंकों से ओटीपी (वन-टाइम पासवर्ड) जैसे संदेश प्राप्त होते हैं? 5. क्या आप अपने फोन पर सभी संदेशों को पढ़ने और उन तक पहुंचने में सक्षम हैं? 6. आप किस भाषा में संदेश प्राप्त करते हैं? 7. क्या आप अंग्रेजी भाषा में भेजे गए संदेशों को समझ और पढ़ सकते हैं? 8. क्या आप किसी के साथ ओटीपी साझा नहीं करने के महत्व से अवगत हैं?
+      options:
+        - 1
+        - 2
+        - 3
+        - 4
+        - 5
