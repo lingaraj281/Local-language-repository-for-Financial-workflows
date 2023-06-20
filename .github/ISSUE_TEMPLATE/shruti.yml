@@ -1,0 +1,129 @@
+name: Survey for Local language workflows 2023
+description: This GitHub issue form is for Survey for Local language workflows 2023
+ 
+body:
+  - type: dropdown
+    id: prompt1
+    attributes:
+      label: 15. Monthly Income
+      multiple: false
+      options:
+        - "< ₹10,000"
+        - "₹10,000 -  ₹20,000"
+        - "₹20,001 -  ₹30,000"
+        - "₹30,001 - ₹40,000"
+        - "Above ₹40,000"
+    validations:
+      required: true
+
+  - type: input
+    id: prompt2
+    attributes:
+      label: 16. Local Monthly Expense
+      placeholder: Enter the amount in INR
+    validations:
+      required: true
+
+  - type: input
+    id: prompt3
+    attributes:
+      label: 17. Typical Fund Transferred per Month to Remote Family
+      placeholder: Enter the amount in INR
+    validations:
+      required: true
+
+  - type: input
+    id: prompt4
+    attributes:
+      label: 18. Any Other Financial Notes (Open)
+      placeholder: Enter any additional information
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: "## 19. Investments"
+
+  - type: input
+    id: prompt5a
+    attributes:
+      label: a. FD / RD		
+      placeholder: Enter the amount in INR
+    validations:
+      required: true
+
+  - type: input
+    id: prompt5b
+    attributes:
+      label: b. Mutual Funds 				
+      placeholder: Enter the amount in INR
+    validations:
+      required: true
+
+  - type: input
+    id: prompt5c
+    attributes:
+      label: c. Others				
+      placeholder: Enter the amount in INR
+    validations:
+      required: true
+      
+  - type: input
+    id: prompt5d
+    attributes:
+      label: d. Others				
+      placeholder: Enter the amount in INR
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: "## 20. Loans / Liability :"
+
+  - type: input
+    id: prompt6a
+    attributes:
+      label: 1a. Loan Type					
+      placeholder: Write here
+    validations:
+      required: true
+
+  - type: input
+    id: prompt6b
+    attributes:
+      label: 1b. Amount			 				
+      placeholder: Enter the amount in INR
+    validations:
+      required: true
+
+  - type: input
+    id: prompt6c
+    attributes:
+      label: 1c. Bank			 				
+      placeholder: Write here
+    validations:
+      required: true
+
+  - type: input
+    id: prompt6d
+    attributes:
+      label: 2a. Loan Type					
+      placeholder: Write here
+    validations:
+      required: true
+
+  - type: input
+    id: prompt6e
+    attributes:
+      label: 2b. Amount			 				
+      placeholder: Enter the amount in INR
+    validations:
+      required: true
+
+  - type: input
+    id: prompt6f
+    attributes:
+      label: 2c. Bank			 				
+      placeholder: Write here
+    validations:
+      required: true
