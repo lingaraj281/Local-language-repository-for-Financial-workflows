@@ -147,7 +147,7 @@ body:
   - type: dropdown
     id: prompt1
     attributes:
-      label: 15. Monthly Income
+      label: Monthly Income
       multiple: false
       options:
         - "< ₹10,000"
@@ -161,7 +161,7 @@ body:
   - type: input
     id: prompt2
     attributes:
-      label: 16. Local Monthly Expense
+      label: Local Monthly Expense
       placeholder: Enter the amount in INR
     validations:
       required: true
@@ -169,7 +169,7 @@ body:
   - type: input
     id: prompt3
     attributes:
-      label: 17. Typical Fund Transferred per Month to Remote Family
+      label: Typical Fund Transferred per Month to Remote Family
       placeholder: Enter the amount in INR
     validations:
       required: true
@@ -177,7 +177,7 @@ body:
   - type: input
     id: prompt4
     attributes:
-      label: 18. Any Other Financial Notes (Open)
+      label: Any Other Financial Notes (Open)
       placeholder: Enter any additional information
     validations:
       required: true
@@ -220,7 +220,7 @@ body:
 
   - type: markdown
     attributes:
-      value: "## 20. Loans / Liability :"
+      value: "## Loans / Liability :"
 
   - type: input
     id: prompt6a
