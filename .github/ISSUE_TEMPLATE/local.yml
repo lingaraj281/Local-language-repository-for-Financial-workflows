@@ -69,17 +69,21 @@ body:
         - Other
     validations:
       required: True
-  - type: checkboxes
+  - type: dropdown
     id: languages
     attributes:
       label: Languages Known
+      description: What are the languages know by them
       options:
         - English
         - Hindi
-        - Odia
         - Tamil
+        - Odia
         - Telugu
         - Bengali
+      multiple: True
+    validations:
+      required: True
   - type: input
     id: mobile
     attributes:
