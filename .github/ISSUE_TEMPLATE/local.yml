@@ -129,9 +129,13 @@ body:
       placeholder: e.g. 5th / 8th
     validations:
       required: True
-  - type: markdown
-    id: subsection
+  - type: dropdown
+    id: literacy
     attributes:
-      value: |
-        ## Digital Literacy
-  
+      label: Digital Literacy
+      options:
+        - 1
+        - 2
+        - 3
+        - 4
+        - 5
