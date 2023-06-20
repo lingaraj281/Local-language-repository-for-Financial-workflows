@@ -62,7 +62,7 @@ body:
   - type: dropdown
     id: gender
     attributes:
-      label: 
+      label: Gender
       options:
         - Male
         - Female
