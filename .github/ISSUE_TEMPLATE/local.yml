@@ -62,7 +62,7 @@ body:
   - type: dropdown
     id: gender
     attributes:
-      label: Age
+      label: Gender
       options:
         - Male
         - Female
@@ -105,7 +105,7 @@ body:
   - type: input
     id: address
     attributes:
-      label: Which State?
+      label: Home State?
       description: Enter the participant home state
       placeholder: e.g. Odisha
     validations:
@@ -140,6 +140,8 @@ body:
         - 3
         - 4
         - 5
+    validations:
+      required: True
   - type: markdown
     attributes:
       value: |
@@ -184,7 +186,7 @@ body:
 
   - type: markdown
     attributes:
-      value: "## 19. Investments"
+      value: "## Investments"
 
   - type: input
     id: prompt5a
@@ -208,7 +210,7 @@ body:
       label: c. Others				
       placeholder: Enter the amount in INR
     validations:
-      required: true
+      # required: true
       
   - type: input
     id: prompt5d
@@ -216,7 +218,7 @@ body:
       label: d. Others				
       placeholder: Enter the amount in INR
     validations:
-      required: true
+      # required: true
 
   - type: markdown
     attributes:
@@ -386,4 +388,4 @@ body:
       label: Others 
       description: Name
     validations:
-      required: true
+      # required: true
