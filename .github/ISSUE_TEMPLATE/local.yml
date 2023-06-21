@@ -394,7 +394,7 @@ body:
       description: Name
     validations:
       # required: true
-- type: markdown
+  - type: markdown
     attributes:
       value: | 
          # Payments and Transfers (Monthly / Annual)
