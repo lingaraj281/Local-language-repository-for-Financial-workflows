@@ -8,7 +8,7 @@ body:
     attributes:
       value: |
         # Survey for Local Language Repository
-        # ---------------------------------------
+        # -------------------------------------------------
   - type: markdown
     attributes:
       value: |
