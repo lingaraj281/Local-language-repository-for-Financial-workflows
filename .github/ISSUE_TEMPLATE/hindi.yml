@@ -127,3 +127,250 @@ body:
         - 3
         - 4
         - 5
+  - type: markdown
+    attributes:
+      value: |
+        # 3. Financal Overview
+  - type: dropdown
+    id: prompt1
+    attributes:
+      label: आप एक महीने में कितना कमाते हैं
+      multiple: false
+      options:
+        - "< ₹10,000"
+        - "₹10,000 -  ₹20,000"
+        - "₹20,001 -  ₹30,000"
+        - "₹30,001 - ₹40,000"
+        - "Above ₹40,000"
+    validations:
+      required: true
+
+  - type: input
+    id: prompt2
+    attributes:
+      label: आप एक महीने में कितना खर्च करते हैं
+      placeholder: Enter the amount in INR
+    validations:
+      required: true
+
+  - type: input
+    id: prompt3
+    attributes:
+      label: आप एक महीने में अपने परिवार को कितनी राशि भेजते हैं (Remote Family)
+      placeholder: Enter the amount in INR
+    validations:
+      required: true
+
+  - type: input
+    id: prompt4
+    attributes:
+      label: परिवार के अलावा और किसी को कुछ पैसा भेजते हैं?
+      placeholder: Enter any additional information
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: "## Investments / निवेश"
+
+  - type: input
+    id: prompt5a
+    attributes:
+      label: a. FD / RD	
+      placeholder: Enter the amount in INR
+    validations:
+      required: true
+
+  - type: input
+    id: prompt5b
+    attributes:
+      label: b. Mutual Funds 				
+      placeholder: Enter the amount in INR
+    validations:
+      required: true
+
+  - type: input
+    id: prompt5c
+    attributes:
+      label: c. Others				
+      placeholder: Enter the amount in INR
+    validations:
+      # required: true
+      
+  - type: input
+    id: prompt5d
+    attributes:
+      label: d. Others				
+      placeholder: Enter the amount in INR
+    validations:
+      # required: true
+
+  - type: markdown
+    attributes:
+      value: "## Loans / Liability :"
+
+  - type: input
+    id: prompt6a
+    attributes:
+      label: 1a. Loan Type 	(ऋृण प्रकार)			
+      placeholder: Write here
+    validations:
+      required: true
+
+  - type: input
+    id: prompt6b
+    attributes:
+      label: 1b. Amount			 				
+      placeholder: Enter the amount in INR
+    validations:
+      required: true
+
+  - type: input
+    id: prompt6c
+    attributes:
+      label: 1c. Bank			 				
+      placeholder: Write here
+    validations:
+      required: true
+
+  - type: input
+    id: prompt6d
+    attributes:
+      label: 2a. Loan Type					
+      placeholder: Write here
+    validations:
+      # required: true
+
+  - type: input
+    id: prompt6e
+    attributes:
+      label: 2b. Amount			 				
+      placeholder: Enter the amount in INR
+    validations:
+      # required: true
+
+  - type: input
+    id: prompt6f
+    attributes:
+      label: 2c. Bank			 				
+      placeholder: Write here
+    validations:
+      # required: true
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this bug report!
+  - type: markdown
+    attributes:
+      value: | 
+         # Banking relationship + Products / Channels.
+    validations: 
+      required: true
+  - type: input
+    id: Bank
+    attributes:
+      label: Bank Account
+      description: Number of bank Saving accounts /Post office accounts.
+      placeholder: ex. Number
+    validations:
+      required: true
+  - type: input
+    id: Bank-detail
+    attributes:
+      label: Name of Bank
+      description: Name of Banks/branch.
+      placeholder: ex. SBI
+    validations:
+      required: true
+  - type: markdown
+    attributes:
+      value: | 
+         ## 4. Banking products/services used (multi-choice – includes open list) - Personal usage/awareness?
+    validations: 
+      required: true
+  - type: dropdown
+    id: Check-book
+    attributes:
+      label: Cheque book
+      description: Do you have check book?
+      multiple: true
+      options:
+        - "Yes"
+        - "No"
+        - Prefer not to say
+        - I do not say
+    validations:
+      required: true
+  - type: dropdown
+    id: ATM-Debit
+    attributes:
+      label: ATM/Debit card
+      description: Do you have ATM/Debit card?
+      multiple: true
+      options:
+        - "Yes"
+        - "No"
+        - Prefer not to say
+        - I do not say
+    validations:
+      required: true
+  - type: dropdown
+    id: Credit-Card
+    attributes:
+      label: Credit Card
+      description: Do you have Credit Card?
+      multiple: true
+      options:
+        - "Yes"
+        - "No"
+        - Prefer not to say
+        - I do not say
+    validations:
+      required: true
+  - type: dropdown
+    id: Loans
+    attributes:
+      label: Loans
+      description: Have you taken any loans like Gold, Kisan, etc
+      multiple: true
+      options:
+        - "Yes"
+        - "No"
+        - Prefer not to say
+        - I do not say
+    validations:
+      required: true
+  - type: input
+    id: branch
+    attributes:
+      label: Products via branch
+      description: Name
+    validations:
+      required: true
+  - type: input
+    id: Business
+    attributes:
+      label: Products via Business correspondent / Bank Mitra, Post office 
+      description: Name
+    validations:
+      required: true
+  - type: dropdown
+    id: Internet-Banking
+    attributes:
+      label: Online / Mobile banking.
+      description: Are you using Internet banking
+      multiple: true
+      options:
+        - "Yes"
+        - "No"
+        - Prefer not to say
+        - I do not say
+    validations:
+      required: true
+  - type: textarea
+    id: Others
+    attributes:
+      label: Others 
+      description: Name
+    validations:
+      # required: true
