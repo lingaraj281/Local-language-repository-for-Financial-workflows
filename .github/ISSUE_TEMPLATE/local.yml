@@ -394,3 +394,113 @@ body:
       description: Name
     validations:
       # required: true
+- type: markdown
+    attributes:
+      value: | 
+         # Payments and Transfers (Monthly / Annual)
+    validations: 
+      required: true
+  - type: textarea
+    id: upi
+    attributes:
+      label: UPI or UPI enabled apps
+      description: You are using any UPI apps?
+      placeholder:  BHIM
+    validations:
+      required: true
+  - type: input
+    id: wallets
+    attributes:
+      label: Used Wallets
+      description: You are using wallets?
+      placeholder:  Yes / No
+    validations:
+      required: true
+  - type: input
+    id: counts
+    attributes:
+      label:   Typical Count of Local Payments per month (in proximity / phone number, UPI-handle etc.)
+      description: Number of counts
+      placeholder:  Number
+    validations:
+      required: true
+  - type: input
+    id: Local-payment
+    attributes:
+      label: Typical amount for Local payments
+      description: Approx amount using through UPI
+      placeholder:  "10,000"
+    validations:
+      required: true
+  - type: input
+    id: QR
+    attributes:
+      label: QR Code based Payments
+      description: Are you making payment through QR code?
+      placeholder:  Yes / No
+    validations:
+      required: true
+  - type: input
+    id: rent
+    attributes:
+      label: Rent
+      description: You have your own house / you are living in Rent
+      placeholder:  Yes / No
+    validations:
+      required: true
+  - type: dropdown
+    id: Transport
+    attributes:
+      label: Local Transport
+      description: Which type of local transport you are using?
+      multiple: true
+      options:
+        - Metro
+        - Train
+        - Bus
+        - Others
+    validations:
+      required: true
+  - type: markdown
+    attributes:
+      value: | 
+         ## Other BBPS list:
+    validations: 
+      required: true
+  - type: input
+    id: recharge
+    attributes:
+      label: Phone / data Recharge
+      description: Are you using UPI for recharge payments?
+      placeholder:  Yes / No
+    validations:
+      required: true
+  - type: input
+    id: Electricity
+    attributes:
+      label: Electricity / Water / Utilities
+      description: Are you using UPI for Electricity / Water bills payments?
+      placeholder:  Yes / No
+    validations:
+      required: true
+  - type: input
+    id: othe
+    attributes:
+      label: Others
+      description: Are you using UPI for other payments?
+      placeholder:  Yes / No
+    validations:
+      required: true
+  - type: dropdown
+    id: remote
+    attributes:
+      label: Remote payments / fund transfers
+      description: Are you using UPI payments for remote payments?
+      multiple: true
+      options:
+        - Wallet
+        - UPI
+        - NEFT/IMPS/RTGS
+        - Other Method
+    validations:
+      required: true
