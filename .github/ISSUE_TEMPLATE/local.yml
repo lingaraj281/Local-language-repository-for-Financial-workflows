@@ -353,7 +353,7 @@ body:
     id: Loans
     attributes:
       label: Loans
-      description: Have you taken any loans like Gold, Kisan, etc
+      # description: Have you taken any loans like Gold, Kisan, etc
       multiple: true
       options:
         - "Yes"
