@@ -183,7 +183,6 @@ body:
 
   - type: input
     id: prompt4
-    description: Funds transferred to anyone other than family
     attributes:
       label: Any Other Financial Notes (Open)
       placeholder: Enter any additional information
@@ -232,7 +231,6 @@ body:
 
   - type: input
     id: prompt6a
-    description: Home Loan / Gold Loan etc.
     attributes:
       label: 1a. Loan Type					
       placeholder: Write here
@@ -353,7 +351,7 @@ body:
     id: Loans
     attributes:
       label: Loans
-      # description: Have you taken any loans like Gold, Kisan, etc
+      description: Have you taken any loans like Gold, Kisan, etc
       multiple: true
       options:
         - "Yes"
