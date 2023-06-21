@@ -183,6 +183,7 @@ body:
 
   - type: input
     id: prompt4
+    description: Funds transferred to anyone other than family
     attributes:
       label: Any Other Financial Notes (Open)
       placeholder: Enter any additional information
@@ -231,6 +232,7 @@ body:
 
   - type: input
     id: prompt6a
+    description: Home Loan / Gold Loan etc.
     attributes:
       label: 1a. Loan Type					
       placeholder: Write here
