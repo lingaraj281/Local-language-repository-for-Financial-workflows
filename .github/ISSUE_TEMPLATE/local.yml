@@ -350,8 +350,6 @@ body:
       placeholder: Write here
     validations:
       required: true
-
-> Adarsh Anand SFP IITM:
 - type: input
     id: prompt6b
     attributes:
