@@ -351,12 +351,12 @@ body:
     validations:
       required: true
   - type: input
-      id: prompt6b
-      attributes:
-        label: Amount               
-        placeholder: Enter the amount in INR
-      validations:
-        required: true
+    id: prompt6b
+    attributes:
+      label: Amount               
+      placeholder: Enter the amount in INR
+    validations:
+      required: true
 
   - type: input
     id: prompt6c
