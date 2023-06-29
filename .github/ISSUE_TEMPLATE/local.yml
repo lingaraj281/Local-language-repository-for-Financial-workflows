@@ -239,21 +239,6 @@ body:
       placeholder: Atal Pension Yojana/Samrudhi Youjana/Others
     validations:
       required: true 
-  - type: input
-    id: branch
-    attributes:
-      label: Products via branch
-      description: Services/Items which we used
-      placeholder: Cheque book/ATM/Credit Cards
-    validations:
-      required: true
-  - type: input
-    id: Business
-    attributes:
-      label: Products via Business correspondent / Bank Mitra, Post office 
-      description: Name
-    validations:
-      required: true
   - type: dropdown
     id: Internet-Banking
     attributes:
