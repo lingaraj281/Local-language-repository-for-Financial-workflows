@@ -552,16 +552,22 @@ body:
       options:
         - Digitally
         - Physically
+    validations:
+      required: True
   - type: input
     id: first_work
     attributes:
       label: First workflow name
       placeholder: For e.g. - Address Change at branch
+    validations:
+      required: True
   - type: input
     id: first_workflow
     attributes:
       label: What are the phrases you use/expect to be used by you and by the banker/app?
       description: for e.g.  -Address change/QR Code/ATM
+    validations:
+      required: True
   - type: input
     id: first_step
     attributes:
@@ -589,4 +595,4 @@ body:
       label: Step 4
       description: What is the fourth step when you go for the first workflow
     validations:
-      required: true
+      required: false
