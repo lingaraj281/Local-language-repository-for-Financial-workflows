@@ -541,19 +541,19 @@ body:
     validations:
       required: true
   - type: markdown
-    id: type4
+    id: last_part
     attributes:
       value: |
         # 5. Financial Workflows and Phrases
   - type: dropdown
-    id: type4.1
+    id: common
     attributes:
       label: What do you prefer for common financial workflows?
       options:
         - Digitally
         - Physically
   - type: input
-    id: first_workflow
+    id: first_work
     attributes:
       label: First workflow name
       placeholder: For e.g. - Address Change at branch
