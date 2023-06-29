@@ -474,23 +474,7 @@ body:
       description: How often you use QR code for payments? 
       placeholder:  Number
     validations:
-      required: true
-  - type: input
-    id: QR-weekly
-    attributes:
-      label: QR Payment Weekly
-      description: QR Code based payments in last week
-      placeholder: "2,000"
-    validations:
-      required: true  
-  - type: input
-    id: QR-amount
-    attributes:
-      label: QR Payment Amount
-      description:   QR Code based payment (on an average per month)
-      placeholder:  "8,000"
-    validations:
-      required: true     
+      required: true   
   - type: dropdown
     id: Transport
     attributes:
