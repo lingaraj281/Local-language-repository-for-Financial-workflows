@@ -22,7 +22,7 @@ body:
     validations:
       required: True
   - type: input
-    id: date&time
+    id: date_time
     attributes:
       label: Date
   - type: input
@@ -79,7 +79,7 @@ body:
     validations:
       required: True
   - type: input
-    id: mobilenum
+    id: mobile_num
     attributes:
       label: Mobile Number
       description: Enter Mobile number of participant
