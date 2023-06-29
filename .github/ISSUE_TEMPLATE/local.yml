@@ -190,19 +190,6 @@ body:
       placeholder: Enter the amount in INR
     validations:
       required: true
-
-> Adarsh Anand SFP IITM:
-name: Bug Report
-description: File a bug report
-title: "[Bug]: "
-labels: ["bug", "triage"]
-assignees:
-  - octocat
-body:
-  - type: markdown
-    attributes:
-      value: |
-        Thanks for taking the time to fill out this bug report!
   - type: markdown
     attributes:
       value: | 
