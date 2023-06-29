@@ -258,7 +258,7 @@ body:
       label: Others 
       description: Name
     validations:
-      required: true  
+      required: false 
   - type: dropdown
     id: remote-family
     attributes:
@@ -397,14 +397,28 @@ body:
       placeholder: Number
     validations:
       required: true
-  - type: input
+  - type: dropdown
     id: upi-app-detail
     attributes:
       label: UPI apps detail
       description: UPI or UPI enabled app/s details 
       placeholder: BHIM/Phonepe/G-pay/Paytem
+      options:
+        - Phone Pe
+        - Google Pay
+        - PayTm
+        - Amazon Pay
+        - BHIM
     validations:
       required: true
+    multiple: True
+  - type: input
+    id: other_upi
+    attributes:
+      label: Other UPI Apps
+      description: Enter other UPI Apps used by participant
+    validations:
+      required: false
   - type: dropdown
     id: wallets
     attributes:
