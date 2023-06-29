@@ -402,16 +402,16 @@ body:
     attributes:
       label: UPI apps detail
       description: UPI or UPI enabled app/s details 
-      placeholder: BHIM/Phonepe/G-pay/Paytem
       options:
         - Phone Pe
         - Google Pay
         - PayTm
         - Amazon Pay
         - BHIM
+      multiple: True
     validations:
       required: true
-    multiple: True
+    
   - type: input
     id: other_upi
     attributes:
