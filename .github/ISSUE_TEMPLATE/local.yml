@@ -22,6 +22,10 @@ body:
     validations:
       required: True
   - type: input
+    id: date&time
+    attributes:
+      label: Date
+  - type: input
     id: location
     attributes:
       label: Location
@@ -74,6 +78,11 @@ body:
         - Other
     validations:
       required: True
+  - type: input
+    id: mobile_num
+    attributes:
+      label: Mobile Number
+      description: Enter Mobile number of participant
   - type: dropdown
     id: languages
     attributes:
@@ -88,13 +97,19 @@ body:
         - Bengali
       multiple: True
     validations:
-      required: True
+      required: True    
   - type: input
     id: mobile
     attributes:
       label: Phone make / model
       description: Participant is using iOS/Android or (Smartphone / basic keypad phone)
       placeholder: e.g. Smartphone
+    validations:
+      required: True
+  - type: input
+    id: family
+    attributes:
+      label: Local Family Size
     validations:
       required: True
   - type: dropdown
