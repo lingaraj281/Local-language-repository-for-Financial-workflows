@@ -540,3 +540,51 @@ body:
         - Other Method
     validations:
       required: true
+  - type: markdown
+    id: type4
+    attributes:
+      value: |
+        # Financial Workflows and Phrases
+  - type: markdown
+    id: type4.1
+    attributes:
+      value: |
+        ## What are the common financial workflows (Digital/Physical)
+  - type: input
+    id: first_workflow
+    attributes:
+      label: First workflow name
+      placeholder: For e.g. - Address Change at branch
+  - type: markdown
+    id: first_workflow_1
+    attributes:
+      value: |
+        ### What are the phrases you use/expect to be used by you and by the banker / app?
+  - type: input
+    id: first_step
+    attributes:
+      label: Step 1
+      description: What is the first step when you go for the first workflow
+    validations:
+      required: true
+  - type: input
+    id: second_step
+    attributes:
+      label: Step 2
+      description: What is the second step when you go for the first workflow
+    validations:
+      required: true
+  - type: input
+    id: third_step
+    attributes:
+      label: Step 3
+      description: What is the third step when you go for the first workflow
+    validations:
+      required: true
+  - type: input
+    id: fourth_step
+    attributes:
+      label: Step 4
+      description: What is the fourth step when you go for the first workflow
+    validations:
+      required: true
