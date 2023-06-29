@@ -165,10 +165,6 @@ body:
         - 5
     validations:
       required: True
-  - type: markdown
-    attributes:
-      value: |
-        # 3. Financal Overview
   - type: dropdown
     id: prompt1
     attributes:
