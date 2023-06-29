@@ -558,7 +558,7 @@ body:
       label: First workflow name
       placeholder: For e.g. - Address Change at branch
   - type: input
-    id: first_workflow_1
+    id: first_workflow
     attributes:
       label: What are the phrases you use/expect to be used by you and by the banker/app?
       description: for e.g.  -Address change/QR Code/ATM
