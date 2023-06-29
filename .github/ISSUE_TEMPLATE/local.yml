@@ -189,7 +189,7 @@ body:
   - type: markdown
     attributes:
       value: | 
-         # 3.Banking relationship + Products / Channels
+         # 3. Banking relationship + Products / Channels
     validations: 
       required: true
   - type: input
@@ -374,7 +374,7 @@ body:
   - type: markdown
     attributes:
       value: | 
-         # Payments and Transfers (Monthly / Annual)
+         # 4. Payments and Transfers (Monthly / Annual)
     validations: 
       required: true
   - type: dropdown
@@ -544,22 +544,24 @@ body:
     id: type4
     attributes:
       value: |
-        # Financial Workflows and Phrases
-  - type: markdown
+        # 5. Financial Workflows and Phrases
+  - type: dropdown
     id: type4.1
     attributes:
-      value: |
-        ## What are the common financial workflows (Digital/Physical)
+      label: What do you prefer for common financial workflows?
+      options:
+        - Digitally
+        - Physically
   - type: input
     id: first_workflow
     attributes:
       label: First workflow name
       placeholder: For e.g. - Address Change at branch
-  - type: markdown
+  - type: input
     id: first_workflow_1
     attributes:
-      value: |
-        ### What are the phrases you use/expect to be used by you and by the banker / app?
+      label: What are the phrases you use/expect to be used by you and by the banker/app?
+      description: for e.g.  -Address change/QR Code/ATM
   - type: input
     id: first_step
     attributes:
