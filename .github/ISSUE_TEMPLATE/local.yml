@@ -25,6 +25,8 @@ body:
     id: date_time
     attributes:
       label: Date
+    validations:
+      required: True
   - type: input
     id: location
     attributes:
@@ -109,6 +111,7 @@ body:
   - type: input
     id: family
     attributes:
+      description: If they are living alone then size will be 1 or input accordingly to response
       label: Local Family Size
     validations:
       required: True
@@ -188,109 +191,14 @@ body:
     validations:
       required: true
 
-  - type: input
-    id: prompt3
-    attributes:
-      label: Typical Fund Transferred per Month to Remote Family
-      placeholder: Enter the amount in INR
-    validations:
-      required: true
-
-  - type: input
-    id: prompt4
-    attributes:
-      label: Any Other Financial Notes (Open)
-      placeholder: Enter any additional information
-    validations:
-      required: true
-
-  - type: markdown
-    attributes:
-      value: "## Investments"
-
-  - type: input
-    id: prompt5a
-    attributes:
-      label: a. FD / RD		
-      placeholder: Enter the amount in INR
-    validations:
-      required: true
-
-  - type: input
-    id: prompt5b
-    attributes:
-      label: b. Mutual Funds 				
-      placeholder: Enter the amount in INR
-    validations:
-      required: true
-
-  - type: input
-    id: prompt5c
-    attributes:
-      label: c. Others				
-      placeholder: Enter the amount in INR
-    validations:
-      # required: true
-      
-  - type: input
-    id: prompt5d
-    attributes:
-      label: d. Others				
-      placeholder: Enter the amount in INR
-    validations:
-      # required: true
-
-  - type: markdown
-    attributes:
-      value: "## Loans / Liability :"
-
-  - type: input
-    id: prompt6a
-    attributes:
-      label: 1a. Loan Type					
-      placeholder: Write here
-    validations:
-      required: true
-
-  - type: input
-    id: prompt6b
-    attributes:
-      label: 1b. Amount			 				
-      placeholder: Enter the amount in INR
-    validations:
-      required: true
-
-  - type: input
-    id: prompt6c
-    attributes:
-      label: 1c. Bank			 				
-      placeholder: Write here
-    validations:
-      required: true
-
-  - type: input
-    id: prompt6d
-    attributes:
-      label: 2a. Loan Type					
-      placeholder: Write here
-    validations:
-      # required: true
-
-  - type: input
-    id: prompt6e
-    attributes:
-      label: 2b. Amount			 				
-      placeholder: Enter the amount in INR
-    validations:
-      # required: true
-
-  - type: input
-    id: prompt6f
-    attributes:
-      label: 2c. Bank			 				
-      placeholder: Write here
-    validations:
-      # required: true
+> Adarsh Anand SFP IITM:
+name: Bug Report
+description: File a bug report
+title: "[Bug]: "
+labels: ["bug", "triage"]
+assignees:
+  - octocat
+body:
   - type: markdown
     attributes:
       value: |
@@ -298,88 +206,62 @@ body:
   - type: markdown
     attributes:
       value: | 
-         # 4. Banking relationship + Products / Channels.
+         # Banking relationship + Products / Channels
     validations: 
       required: true
   - type: input
     id: Bank
     attributes:
       label: Bank Account
-      description: Number of bank Saving accounts /Post office accounts.
-      placeholder: ex. Number
+      description: How many bank accounts do you have.
+      placeholder: Number
     validations:
       required: true
+  - type: input
+    id: Post
+    attributes:
+      label: Post Office Account
+      description: How many Post office accounts do you have.
+      placeholder: Number
+    validations:
+      required: true    
   - type: input
     id: Bank-detail
     attributes:
       label: Name of Bank
       description: Name of Banks/branch.
-      placeholder: ex. SBI
-    validations:
-      required: true
-  - type: markdown
-    attributes:
-      value: | 
-         ## Banking products/services used (multi-choice – includes open list) - Personal usage/awareness?
-    validations: 
-      required: true
-  - type: dropdown
-    id: Check-book
-    attributes:
-      label: Cheque book
-      description: Do you have check book?
-      multiple: true
-      options:
-        - "Yes"
-        - "No"
-        - Prefer not to say
-        - I do not say
+      placeholder: SBI
     validations:
       required: true
   - type: dropdown
-    id: ATM-Debit
+    id: Banking-product
     attributes:
-      label: ATM/Debit card
-      description: Do you have ATM/Debit card?
+      label: Banking Products
+      description: What are the banking services you use
       multiple: true
       options:
-        - "Yes"
-        - "No"
-        - Prefer not to say
-        - I do not say
+        - Cheque Book
+        - ATM / Debit Card
+        - Credit Card
+        - Net Banking
+        - Loans
+        - Insurance
     validations:
-      required: true
-  - type: dropdown
-    id: Credit-Card
+      required: true    
+  - type: input
+    id: gov-scheme
     attributes:
-      label: Credit Card
-      description: Do you have Credit Card?
-      multiple: true
-      options:
-        - "Yes"
-        - "No"
-        - Prefer not to say
-        - I do not say
+      label: Government Schemes
+      description: What are the government benefit Schemes you use 
+      placeholder: Atal Pension Yojana/Samrudhi Youjana/Others
     validations:
-      required: true
-  - type: dropdown
-    id: Loans
-    attributes:
-      label: Loans
-      description: Have you taken any loans like Gold, Kisan, etc
-      multiple: true
-      options:
-        - "Yes"
-        - "No"
-        - Prefer not to say
-        - I do not say
-    validations:
-      required: true
+      required: true 
   - type: input
     id: branch
     attributes:
       label: Products via branch
-      description: Name
+      description: Services/Items which we used
+      placeholder: Cheque book/ATM/Credit Cards
     validations:
       required: true
   - type: input
@@ -394,7 +276,7 @@ body:
     attributes:
       label: Online / Mobile banking.
       description: Are you using Internet banking
-      multiple: true
+     # multiple: true
       options:
         - "Yes"
         - "No"
@@ -402,108 +284,269 @@ body:
         - I do not say
     validations:
       required: true
-  - type: textarea
+  - type: input
     id: Others
     attributes:
       label: Others 
       description: Name
     validations:
-      # required: true
-  - type: markdown
+      required: true  
+  - type: dropdown
+    id: remote-family
     attributes:
-      value: | 
-         # 5. Payments and Transfers (Monthly / Annual)
-    validations: 
-      required: true
-  - type: textarea
-    id: upi
-    attributes:
-      label: UPI or UPI enabled apps
-      description: You are using any UPI apps?
-      placeholder:  BHIM
+      label: Remote Family
+      description: Do you transfer money to remote family?
+      # multiple: true
+      options:
+        - "Yes"
+        - "No"
+        - Do not know
+        - will not say
     validations:
       required: true
   - type: input
+    id: Remote-family-money
+    attributes:
+      label: Remote Family Money
+      description: How much money do you transfer to remote family in a month?
+      placeholder: Number
+    validations:
+      required: true
+  - type: input
+    id: financial-notes
+    attributes:
+      label: Financial Notes
+      description: Amount of money sent to someone other than family.
+      placeholder: "6,000"
+    validations:
+      required: true
+  - type: markdown
+    attributes:
+      value: "## Investments"
+
+  - type: input
+    id: prompt5a
+    attributes:
+      label: FD / RD    
+      placeholder: Enter the amount in INR
+    validations:
+      required: true
+  - type: input
+    id: prompt5b
+    attributes:
+      label: Mutual Funds         
+      placeholder: Enter the amount in INR
+    validations:
+      required: true
+  - type: input
+    id: prompt5c
+    attributes:
+      label: Others        
+      placeholder: Enter the amount in INR
+    validations:
+      required: true  
+  - type: input
+    id: prompt5d
+    attributes:
+      label: Others        
+      placeholder: Enter the amount in INR
+    validations:
+     # required: true
+  - type: markdown
+    attributes:
+      value: "## Loans / Liability "
+
+  - type: input
+    id: prompt6a
+    attributes:
+      label: Loan Type          
+      placeholder: Write here
+    validations:
+      required: true
+
+> Adarsh Anand SFP IITM:
+- type: input
+    id: prompt6b
+    attributes:
+      label: Amount               
+      placeholder: Enter the amount in INR
+    validations:
+      required: true
+
+  - type: input
+    id: prompt6c
+    attributes:
+      label: Bank               
+      placeholder: Write here
+    validations:
+      required: true
+
+  - type: input
+    id: prompt6d
+    attributes:
+      label: Loan Type          
+      placeholder: Write here
+    validations:
+      #required: true
+
+  - type: input
+    id: prompt6e
+    attributes:
+      label: Amount               
+      placeholder: Enter the amount in INR
+    validations:
+     # required: true
+
+  - type: input
+    id: prompt6f
+    attributes:
+      label: Bank               
+      placeholder: Write here
+    validations:
+     # required: true
+    
+  - type: markdown
+    attributes:
+      value: | 
+         # Payments and Transfers (Monthly / Annual)
+    validations: 
+      required: true
+  - type: dropdown
+    id: upi
+    attributes:
+      label: UPI-enabled apps
+      description: Do you have any app/s related to UPI?
+      options:
+        - "Yes"
+        - "No"
+        - Do not know
+        - will not say
+    validations:
+      required: true
+  - type: input
+    id: upi-apps
+    attributes:
+      label: Number of UPI apps
+      description: How many such apps you have installed in your mobile?
+      placeholder: Number
+    validations:
+      required: true
+  - type: input
+    id: upi-app-detail
+    attributes:
+      label: UPI apps detail
+      description: UPI or UPI enabled app/s details 
+      placeholder: BHIM/Phonepe/G-pay/Paytem
+    validations:
+      required: true
+  - type: dropdown
     id: wallets
     attributes:
       label: Used Wallets
-      description: You are using wallets?
-      placeholder:  Yes / No
+      description: Have you ever used Wallets during transaction?
+      options:
+        - "Yes"
+        - "No"
+        - Do not know
+        - will not say
+    validations:
+      required: true
+  - type: input
+    id: wallet-weekly
+    attributes:
+      label: Wallet Weekly
+      description: How often do you use Wallet for any transaction weekly?
+      placeholder: "1,000"
     validations:
       required: true
   - type: input
     id: counts
     attributes:
-      label:   Typical Count of Local Payments per month (in proximity / phone number, UPI-handle etc.)
-      description: Number of counts
+      label:   Local Payment Counts
+      description: How often do you use UPI handles/phone numbers for Local Payment/s in a month? 
       placeholder:  Number
     validations:
       required: true
   - type: input
     id: Local-payment
     attributes:
-      label: Typical amount for Local payments
-      description: Approx amount using through UPI
+      label: Local Payment Amount
+      description: How much have you spent/transfer last month in Local payments
       placeholder:  "10,000"
     validations:
       required: true
-  - type: input
+  - type: dropdown
     id: QR
     attributes:
       label: QR Code based Payments
-      description: Are you making payment through QR code?
-      placeholder:  Yes / No
+      description: Have you used QR code/s as a payment option/s?
+      options:
+        - "Yes"
+        - "No"
+        - Do not know
+        - will not say
     validations:
       required: true
   - type: input
-    id: rent
+    id: qr-counts
     attributes:
-      label: Rent
-      description: You have your own house / you are living in Rent
-      placeholder:  Yes / No
+      label:   QR Payment Counts
+      description: How often you use QR code for payments? 
+      placeholder:  Number
     validations:
       required: true
+  - type: input
+    id: QR-weekly
+    attributes:
+      label: QR Payment Weekly
+      description: QR Code based payments in last week
+      placeholder: "2,000"
+    validations:
+      required: true  
+  - type: input
+    id: QR-amount
+    attributes:
+      label: QR Payment Amount
+      description:   QR Code based payment (on an average per month)
+      placeholder:  "8,000"
+    validations:
+      required: true     
   - type: dropdown
     id: Transport
     attributes:
-      label: Local Transport
-      description: Which type of local transport you are using?
+      label: UPI Payment for Local Transport
+      description: Do you use UPI payment methods for local transportation purposes (such as metro/bus/MRTS/Ola/Uber)
+      # multiple: true
+      options:
+        - "Yes"
+        - "No"
+        - Do not know
+        - will not say
+    validations:
+      required: true
+  - type: input
+    id: Local-payment-transport
+    attributes:
+      label: Local Transportation Amount
+      description: How much usually do you spend on transportation using UPI payment methods?
+
+> Adarsh Anand SFP IITM:
+placeholder:  "10,000"
+    validations:
+      required: true
+  - type: dropdown
+    id: BBPS
+    attributes:
+      label: BBPS Facilities
+      description: Do you use UPI-based payment methods in other BBPS facilities (Select all that apply)
       multiple: true
       options:
-        - Metro
-        - Train
-        - Bus
+        - Phone/Data recharge
+        - Electricity
+        - Water bills
+        - Utility bills
+        - Online Purchase
         - Others
-    validations:
-      required: true
-  - type: markdown
-    attributes:
-      value: | 
-         ## Other BBPS list:
-    validations: 
-      required: true
-  - type: input
-    id: recharge
-    attributes:
-      label: Phone / data Recharge
-      description: Are you using UPI for recharge payments?
-      placeholder:  Yes / No
-    validations:
-      required: true
-  - type: input
-    id: Electricity
-    attributes:
-      label: Electricity / Water / Utilities
-      description: Are you using UPI for Electricity / Water bills payments?
-      placeholder:  Yes / No
-    validations:
-      required: true
-  - type: input
-    id: othe
-    attributes:
-      label: Others
-      description: Are you using UPI for other payments?
-      placeholder:  Yes / No
     validations:
       required: true
   - type: dropdown
