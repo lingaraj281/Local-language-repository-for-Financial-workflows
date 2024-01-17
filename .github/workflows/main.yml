@@ -4,7 +4,7 @@ run-name : Local Language 2023 Github Actions
 on:
   push:
     branches:
-      - main
+      - master
 
 jobs:
   submit_to_neo4j:
