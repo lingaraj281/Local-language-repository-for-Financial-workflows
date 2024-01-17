@@ -25,7 +25,7 @@ jobs:
         pip install neo4j
 
     - name: Run Python script
-      run: python ${{ vars.PYTHON_DIR }}/submit.py
+      run: python PythonScripts/submit.py
       env:
         NEO4J_URI: ${{ secrets.NEO4J_URI }}
         NEO4J_USER: ${{ secrets.NEO4J_USER }}
